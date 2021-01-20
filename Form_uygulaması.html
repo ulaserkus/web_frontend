@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form App</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        input[type="text"],
+        textarea,
+        select {}
+
+        .form-group {
+            margin-bottom: 6px;
+
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 7px 12px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        .form-control:focus {
+            border-color: #80bdff;
+            outline: 0;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #007bff;
+            border: 1px solid #007bff;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="form1">
+        <div class="form-group">
+            <label for="fullname">FullName</label>
+            <input type="text" name="fullName" class="form-control">
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control">
+
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <div class="form-group"> <select name="country" id="" class="form-control">
+                <option value="türkiye">türkiye</option>
+                <option value="almanya">almanya</option>
+            </select>
+
+        </div>
+    </div>
+     
+
+    <input type="submit" value="submit" class="btn">
+
+</body>
+
+</html>
