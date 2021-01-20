@@ -1,0 +1,200 @@
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Web Projesi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: initial;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+        }
+
+        body {
+            background-color: #C0C0C0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            color: black;
+            font-size: 30px;
+            margin-left: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-right: 380px;
+            font-weight: 700;
+            color: black;
+            font-size: 44px;
+        }
+
+        .container {
+            width: 1500px;
+            box-shadow: 5px 5px 5px #aaaaaa;
+        }
+
+        .column {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+            margin-left: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">3D Models</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" asp-controller="Home" asp-action="List">Products</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+
+            </form>
+            <button style="display:flex" class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+        </div>
+    </nav>
+
+
+
+    <header>
+        <div class="container mt-2">
+
+            <div class="row">
+                <div class="col-sm-12">
+
+
+
+                    <div class="card text-center">
+                        <img class="center card-img-top" src="~/img/1.png" />
+                        <div class="card-header">
+                            Products
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special Products</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-secondary">Go Market Place</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+    <main class="mt-2">
+
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-sm-3">
+                    <button style="display:block; width:130px;height:60px;" class="btn btn-block btn-default btn-dark p-2 mt-2">
+                        Game
+                    </button>
+                    <button style="display:block; width:130px;height:60px;" class="btn btn-block btn-default btn-dark p-2 mt-2">
+                        Engineering
+                    </button>
+                    <button style="display:block; width:130px;height:60px;" class="btn btn-block btn-default btn-dark p-2 mt-2">
+                        Entertainment
+                    </button>
+
+
+                </div>
+                <div class="col-sm-9">
+                    <h1>3D Models</h1>
+                    <div class="card column" style="width: 18rem;">
+                        <img src="~/img/1.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">İtem Name</h5>
+
+                        </div>
+
+                        <div class="card-body">
+                            <a href="#" class="card-link btn btn-secondary">Buy Now</a>
+
+                        </div>
+                    </div>
+
+                    <div class="card column" style="width: 18rem;">
+                        <img src="~/img/1.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">İtem Name</h5>
+
+                        </div>
+
+                        <div class="card-body">
+                            <a href="#" class="card-link btn btn-secondary">Buy Now</a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="card column" style="width: 18rem;">
+                        <img src="~/img/1.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">İtem Name</h5>
+
+                        </div>
+
+                        <div class="card-body">
+                            <a href="#" class="card-link btn btn-secondary">Buy Now</a>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+
+</body>
+
+
+
+
+</html>
